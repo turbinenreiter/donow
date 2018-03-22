@@ -7,10 +7,18 @@ The idea is to provide `Dofiles` and the `donow` command to automate recurring t
 
 ## Installation
 
+from source:
+
 ```
 git clone git@github.com:turbinenreiter/donow.git
 cd donow
 install donow.py ~/bin/donow
+```
+
+or with pip:
+
+```
+pip install donow --user
 ```
 
 ## Usage
