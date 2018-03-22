@@ -4,4 +4,22 @@ test() {
     echo test
 }
 
+clean() {
+    rm -rf build/ dist/ donow.egg-info/
+}
+
+build() {
+    python setup.py bdist_wheel
+}
+
+upload() {
+    twine upload dist/*
+}
+
+publish() {
+    clean()
+    build()
+    upload()
+}
+
 "$@"
