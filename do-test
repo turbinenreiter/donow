@@ -5,7 +5,7 @@ test() {
 }
 
 clean() {
-    rm -rf build/ dist/ donow.egg-info/
+    rm -rf build dist donow.egg-info
 }
 
 build() {
@@ -17,9 +17,9 @@ upload() {
 }
 
 publish() {
-    clean()
-    build()
-    upload()
+    clean
+    build
+    upload
 }
 
 "$@"
